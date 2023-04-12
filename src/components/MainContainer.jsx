@@ -1,8 +1,13 @@
 import React from 'react'
+import HomeContainer from './HomeContainer'
 
 function MainContainer() {
   return (
-    <div>MainContainer</div>
+    <>
+      <div className="w-full h-auto flex flex-co items-center justify-center">
+        <HomeContainer />
+      </div>
+    </>
   )
 }
 
