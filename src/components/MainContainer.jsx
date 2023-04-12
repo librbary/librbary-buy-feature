@@ -1,5 +1,5 @@
-import React from 'react'
-import HomeContainer from './HomeContainer'
+import React from "react";
+import HomeContainer from "./HomeContainer";
 
 function MainContainer() {
   return (
@@ -8,7 +8,7 @@ function MainContainer() {
         <HomeContainer />
       </div>
     </>
-  )
+  );
 }
 
-export default MainContainer
+export default MainContainer;
