@@ -2,20 +2,12 @@
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
 name: deploy
-
 on:
   push:
     branches: [ develop ]
 
 env:
   BRANCH_NAME: ${GITHUB_REF##*/}
-  REACT_APP_FIREBASE_API_KEY: ${{ secrets.REACT_APP_FIREBASE_API_KEY }}
-  REACT_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_AUTH_DOMAIN }}
-  REACT_APP_FIREBASE_DB_URL: ${{ secrets.REACT_APP_FIREBASE_DB_URL }}
-  REACT_APP_FIREBASE_PROJECT_ID: ${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}
-  REACT_APP_FIREBASE_STORAGE_BUCKET: ${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}
-  REACT_APP_FIREBASE_MESSAGING_ID: ${{ secrets.REACT_APP_FIREBASE_MESSAGING_ID }}
-  REACT_APP_FIREBASE_APP_ID: ${{ secrets.REACT_APP_FIREBASE_APP_ID }}
 
 jobs:
   build-and-deploy:
@@ -37,7 +29,6 @@ jobs:
     - run: npm ci
     - run: npm install && npm run build
     - run: npm test
-    - run: echo "echo ${{ secrets.REACT_APP_FIREBASE_API_KEY }}"
     
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
