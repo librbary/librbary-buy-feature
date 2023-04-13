@@ -8,7 +8,7 @@ import HomePageText from "../assets/img/HomePageText.png";
 const HomeContainer = () => {
   return (
     <section
-      className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full "
+      className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full"
       id="home"
     >
       <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
@@ -77,7 +77,7 @@ const HomeContainer = () => {
       <div className="py-2 flex-1 flex items-center relative">
         <img
           src={HeroBg}
-          className=" ml-auto h-420 w-full lg:w-auto lg:h-650"
+          className=" ml-auto h-650 w-full lg:w-auto lg:h-full"
           alt="hero-bg"
         />
 

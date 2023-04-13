@@ -33,6 +33,13 @@ export const heroData = [
     price: "5.25",
     imageSrc: book4,
   },
+  {
+    id: 5,
+    name: "Twisted",
+    decp: "Sci-Fi Thriller",
+    price: "5.25",
+    imageSrc: book5,
+  },
 ];
 
 export const categories = [
