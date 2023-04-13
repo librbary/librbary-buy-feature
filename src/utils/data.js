@@ -1,36 +1,37 @@
-import I1 from "../assets/img/i1.png";
-import F1 from "../assets/img/f1.png";
-import C3 from "../assets/img/c3.png";
-import Fi1 from "../assets/img/fi1.png";
+import book1 from "../assets/img/book1.png";
+import book2 from "../assets/img/book2.png";
+import book3 from "../assets/img/book3.png";
+import book4 from "../assets/img/book4.png";
+import book5 from "../assets/img/book5.png";
 
 export const heroData = [
   {
     id: 1,
-    name: "Icecream",
-    decp: "Chocolate & vanilla",
+    name: "The Past is Rising",
+    decp: "Thriller",
     price: "5.25",
-    imageSrc: I1,
+    imageSrc: book1,
   },
   {
     id: 2,
-    name: "Strawberries",
-    decp: "Fresh Strawberries",
+    name: "Herat Spring Mountain",
+    decp: "Romantic Fiction",
     price: "10.25",
-    imageSrc: F1,
+    imageSrc: book2,
   },
   {
     id: 3,
-    name: "Chicken Kebab",
-    decp: "Mixed Kebab Plate",
+    name: "Letters Skye",
+    decp: "Thriller",
     price: "8.25",
-    imageSrc: C3,
+    imageSrc: book3,
   },
   {
     id: 4,
-    name: "Fish Kebab",
-    decp: "Mixed Fish Kebab",
+    name: "Dust",
+    decp: "Sci-Fi",
     price: "5.25",
-    imageSrc: Fi1,
+    imageSrc: book4,
   },
 ];
 
