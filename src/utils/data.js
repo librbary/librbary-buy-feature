@@ -45,38 +45,121 @@ export const heroData = [
 export const categories = [
   {
     id: 1,
-    name: "Chicken",
-    urlParamName: "chicken",
+    name: "Adventure stories",
+    urlParamName: "adventurous",
   },
   {
     id: 2,
-    name: "Curry",
-    urlParamName: "curry",
+    name: "Classics",
+    urlParamName: "classics",
   },
   {
     id: 3,
-    name: "Rice",
-    urlParamName: "rice",
+    name: "Crime",
+    urlParamName: "crime",
   },
   {
     id: 4,
-    name: "Fish",
-    urlParamName: "fish",
+    name: "Fantasy",
+    urlParamName: "fantasy",
   },
   {
     id: 5,
-    name: "Fruits",
-    urlParamName: "fruits",
+    name: "Fairy and folk tales",
+    urlParamName: "folktales",
   },
   {
     id: 6,
-    name: "Icecreams",
-    urlParamName: "icecreams",
+    name: "Historical fiction",
+    urlParamName: "historical",
   },
 
   {
     id: 7,
-    name: "Soft Drinks",
-    urlParamName: "drinks",
+    name: "Horror",
+    urlParamName: "horror",
+  },
+  {
+    id: 8,
+    name: "Humour and satire",
+    urlParamName: "humour",
+  },
+  {
+    id: 9,
+    name: "Literary fiction",
+    urlParamName: "literary",
+  },
+  {
+    id: 10,
+    name: "Mystery",
+    urlParamName: "mystery",
+  },
+  {
+    id: 11,
+    name: "Poetry",
+    urlParamName: "poetry",
+  },
+  {
+    id: 12,
+    name: "Plays",
+    urlParamName: "plays",
+  },
+  {
+    id: 13,
+    name: "Romance",
+    urlParamName: "romance",
+  },
+
+  {
+    id: 14,
+    name: "Science fiction",
+    urlParamName: "scifi",
+  },
+
+  {
+    id: 15,
+    name: "Short stories",
+    urlParamName: "shorts",
+  },
+  {
+    id: 16,
+    name: "War",
+    urlParamName: "war",
+  },
+  {
+    id: 17,
+    name: "Women’s fiction",
+    urlParamName: "women’",
+  },
+  {
+    id: 18,
+    name: "Young adult",
+    urlParamName: "adult",
+  },
+  {
+    id: 19,
+    name: "Autobiography",
+    urlParamName: "autobiography",
+  },
+  {
+    id: 20,
+    name: "Essays",
+    urlParamName: "essays",
+  },
+
+  {
+    id: 21,
+    name: "Biography",
+    urlParamName: "biography",
+  },
+  {
+    id: 22,
+    name: "Non-fiction novel",
+    urlParamName: "novels",
+  },
+  {
+    id: 23,
+    name: "Self-help",
+    urlParamName: "selfhelp",
   },
 ];

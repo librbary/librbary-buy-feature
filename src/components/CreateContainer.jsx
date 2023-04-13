@@ -17,7 +17,7 @@ import {
   uploadBytesResumable,
 } from "firebase/storage";
 import { storage } from "../firebase.config";
-import { getAllFoodItems, saveItem } from "../utils/firebaseFunctions";
+import { getAllNewArrivals, saveItem } from "../utils/firebaseFunctions";
 import { actionType } from "../context/reducer";
 import { useStateValue } from "../context/StateProvider";
 
@@ -31,7 +31,7 @@ const CreateContainer = () => {
   const [alertStatus, setAlertStatus] = useState("danger");
   const [msg, setMsg] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [{ foodItems }, dispatch] = useStateValue();
+  const [{ newArrivals }, dispatch] = useStateValue();
 
   const uploadImage = (e) => {
     setIsLoading(true);
@@ -139,10 +139,10 @@ const CreateContainer = () => {
   };
 
   const fetchData = async () => {
-    await getAllFoodItems().then((data) => {
+    await getAllNewArrivals().then((data) => {
       dispatch({
-        type: actionType.SET_FOOD_ITEMS,
-        foodItems: data,
+        type: actionType.SET_NEW_ARRIVALS,
+        newArrivals: data,
       });
     });
   };
