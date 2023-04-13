@@ -9,7 +9,7 @@ import reducer from "./context/reducer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <StateProvider initialState={initialState} reducer={reducer}>
       <App />
     </StateProvider>
