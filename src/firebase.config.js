@@ -3,13 +3,13 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA88_YMgi3O0hSMntZAuRnBraxVj2EE_fw",
-  authDomain: "librbary-app.firebaseapp.com",
-  databaseURL: "https://librbary-app-default-rtdb.firebaseio.com",
-  projectId: "librbary-app",
-  storageBucket: "librbary-app.appspot.com",
-  messagingSenderId: "212031870084",
-  appId: "1:212031870084:web:40cfb11dd82ace3a3c1ed1",
+  apiKey: `${process.env.REACT_APP_FIREBASE_API_KEY}`,
+  authDomain: `${process.env.REACT_APP_FIREBASE_AUTH_DOMAIN}`,
+  databaseURL: `${process.env.REACT_APP_FIREBASE_DB_URL}`,
+  projectId: `${process.env.REACT_APP_FIREBASE_PROJECT_ID}`,
+  storageBucket: `${process.env.REACT_APP_FIREBASE_STORAGE_BUCKET}`,
+  messagingSenderId: `${process.env.REACT_APP_FIREBASE_MESSAGING_ID}`,
+  appId: `${process.env.REACT_APP_FIREBASE_APP_ID}`,
 };
 
 const app = getApps.length > 0 ? getApp() : initializeApp(firebaseConfig);
