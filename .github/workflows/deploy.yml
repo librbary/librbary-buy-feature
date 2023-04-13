@@ -7,6 +7,13 @@ on:
       
 env:
   CI: false
+  REACT_APP_FIREBASE_API_KEY: ${{ secrets.REACT_APP_FIREBASE_API_KEY }}
+  REACT_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_AUTH_DOMAIN }}
+  REACT_APP_FIREBASE_DB_URL: ${{ secrets.REACT_APP_FIREBASE_DB_URL }}
+  REACT_APP_FIREBASE_PROJECT_ID: ${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}
+  REACT_APP_FIREBASE_STORAGE_BUCKET: ${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}
+  REACT_APP_FIREBASE_MESSAGING_ID: ${{ secrets.REACT_APP_FIREBASE_MESSAGING_ID }}
+  REACT_APP_FIREBASE_APP_ID: ${{ secrets.REACT_APP_FIREBASE_APP_ID }}
 
 jobs:
   build:
@@ -50,5 +57,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.LIBRBARY_TOKEN }}
           publish_dir: ./build
