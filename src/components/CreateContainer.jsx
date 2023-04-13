@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import {
-  MdFastfood,
   MdCloudUpload,
   MdDelete,
-  MdFoodBank,
-  MdAttachMoney,
 } from "react-icons/md";
+import { BsBook, BsCurrencyRupee } from "react-icons/bs";
+import {FaUser} from "react-icons/fa"
 import { categories } from "../utils/data";
 import Loader from "./Loader";
 import {
@@ -166,13 +165,13 @@ const CreateContainer = () => {
         )}
 
         <div className="w-full py-2 border-b border-gray-300 flex items-center gap-2">
-          <MdFastfood className="text-xl text-gray-700" />
+          <BsBook className="text-xl text-gray-700" />
           <input
             type="text"
             required
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="Give me a title..."
+            placeholder="Book title..."
             className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
           />
         </div>
@@ -209,7 +208,7 @@ const CreateContainer = () => {
                     <div className="w-full h-full flex flex-col items-center justify-center gap-2">
                       <MdCloudUpload className="text-gray-500 text-3xl hover:text-gray-700" />
                       <p className="text-gray-500 hover:text-gray-700">
-                        Click here to upload
+                        Click here to upload Book Cover
                       </p>
                     </div>
                     <input
@@ -245,25 +244,25 @@ const CreateContainer = () => {
 
         <div className="w-full flex flex-col md:flex-row items-center gap-3">
           <div className="w-full py-2 border-b border-gray-300 flex items-center gap-2">
-            <MdFoodBank className="text-gray-700 text-2xl" />
+            <FaUser className="text-gray-700 text-2xl" />
             <input
               type="text"
               required
               value={calories}
               onChange={(e) => setCalories(e.target.value)}
-              placeholder="Calories"
+              placeholder="Author"
               className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
             />
           </div>
 
           <div className="w-full py-2 border-b border-gray-300 flex items-center gap-2">
-            <MdAttachMoney className="text-gray-700 text-2xl" />
+            <BsCurrencyRupee className="text-gray-700 text-2xl" />
             <input
               type="text"
               required
               value={price}
               onChange={(e) => setPrice(e.target.value)}
-              placeholder="Price"
+              placeholder="Amount"
               className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
             />
           </div>
