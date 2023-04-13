@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - develop
+      
+env:
+  CI: false
 
 jobs:
   build:
