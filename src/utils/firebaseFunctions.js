@@ -10,15 +10,15 @@ import { firestore } from "../firebase.config";
 
 // Saving new Item
 export const saveItem = async (data) => {
-  await setDoc(doc(firestore, "foodItems", `${Date.now()}`), data, {
+  await setDoc(doc(firestore, "newArrivals", `${Date.now()}`), data, {
     merge: true,
   });
 };
 
-// getall food items
-export const getAllFoodItems = async () => {
+// getall new arrivals
+export const getAllNewArrivals = async () => {
   const items = await getDocs(
-    query(collection(firestore, "foodItems"), orderBy("id", "desc"))
+    query(collection(firestore, "newArrivals"), orderBy("id", "desc"))
   );
 
   return items.docs.map((doc) => doc.data());

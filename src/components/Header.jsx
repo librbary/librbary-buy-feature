@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { MdShoppingBasket, MdAdd, MdLogout } from "react-icons/md";
+import { MdAdd, MdLogout } from "react-icons/md";
+import { BsCart3 } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
@@ -56,8 +57,7 @@ const Header = () => {
       {/* desktop & tablet */}
       <div className="hidden md:flex w-full h-full items-center justify-between">
         <Link to={"/"} className="flex items-center gap-2">
-          <img src={Logo} className="w-8 object-cover" alt="logo" />
-          <p className="text-headingColor text-xl font-bold"> City</p>
+          <img src={Logo} className="w-[7rem] object-cover" alt="logo" />
         </Link>
 
         <div className="flex items-center gap-8">
@@ -74,17 +74,17 @@ const Header = () => {
             </Link>
             <Link to={"/"}>
               <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-                Menu
+                Features
               </li>
             </Link>
             <Link to={"/"}>
               <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-                About Us
+                New Arrivals
               </li>
             </Link>
             <Link to={"/"}>
               <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-                Service
+                Request for a Book
               </li>
             </Link>
           </motion.ul>
@@ -93,7 +93,7 @@ const Header = () => {
             className="relative flex items-center justify-center"
             onClick={showCart}
           >
-            <MdShoppingBasket className="text-textColor text-2xl  cursor-pointer" />
+            <BsCart3 className="text-textColor text-2xl  cursor-pointer" />
             {cartItems && cartItems.length > 0 && (
               <div className=" absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
                 <p className="text-xs text-white font-semibold">
@@ -147,7 +147,7 @@ const Header = () => {
           className="relative flex items-center justify-center"
           onClick={showCart}
         >
-          <MdShoppingBasket className="text-textColor text-2xl  cursor-pointer" />
+          <BsCart3 className="text-textColor text-2xl  cursor-pointer" />
           {cartItems && cartItems.length > 0 && (
             <div className=" absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
               <p className="text-xs text-white font-semibold">
@@ -158,8 +158,7 @@ const Header = () => {
         </div>
 
         <Link to={"/"} className="flex items-center gap-2">
-          <img src={Logo} className="w-8 object-cover" alt="logo" />
-          <p className="text-headingColor text-xl font-bold"> City</p>
+          <img src={Logo} className="w-20 object-cover" alt="logo" />
         </Link>
 
         <div className="relative">
@@ -196,19 +195,19 @@ const Header = () => {
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
                   onClick={() => setIsMenu(false)}
                 >
-                  Menu
+                  Features
                 </li>
                 <li
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
                   onClick={() => setIsMenu(false)}
                 >
-                  About Us
+                  New Arrivals
                 </li>
                 <li
                   className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
                   onClick={() => setIsMenu(false)}
                 >
-                  Service
+                  Request a Book
                 </li>
               </ul>
 
