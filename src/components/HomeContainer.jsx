@@ -4,13 +4,11 @@ import HeroBg from "../assets/img/heroBg.png";
 import { heroData } from "../utils/data";
 import { motion } from "framer-motion";
 import HomePageText from "../assets/img/HomePageText.png";
+import { BsCurrencyRupee } from "react-icons/bs";
 
 const HomeContainer = () => {
   return (
-    <section
-      className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full"
-      id="home"
-    >
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full" id="home">
       <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
         <div className="flex items-center gap-2 justify-center bg-orange-100 px-4 py-1 rounded-full">
           <p className="text-base text-orange-500 font-semibold">
@@ -102,7 +100,9 @@ const HomeContainer = () => {
                 </p>
 
                 <p className="text-sm font-semibold text-headingColor">
-                  <span className="text-xs text-red-600">$</span> {n.price}
+                  <span className="text-sm text-red-500 flex items-center justify-center">
+                    <BsCurrencyRupee className="" /> {n?.price}
+                  </span>{" "}
                 </p>
               </div>
             ))}

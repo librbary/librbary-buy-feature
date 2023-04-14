@@ -22,7 +22,7 @@ import { useStateValue } from "../context/StateProvider";
 
 const CreateContainer = () => {
   const [title, setTitle] = useState("");
-  const [calories, setCalories] = useState("");
+  const [author, setAuthor] = useState("");
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState(null);
   const [imageAsset, setImageAsset] = useState(null);
@@ -87,7 +87,7 @@ const CreateContainer = () => {
   const saveDetails = () => {
     //setIsLoading(true);
     try {
-      if (!title || !calories || !imageAsset || !price || !category) {
+      if (!title || !author || !imageAsset || !price || !category) {
         setFields(true);
         setMsg("Required fields can't be empty");
         setAlertStatus("danger");
@@ -101,7 +101,7 @@ const CreateContainer = () => {
           title: title,
           imageURL: imageAsset,
           category: category,
-          calories: calories,
+          author: author,
           qty: 1,
           price: price,
         };
@@ -132,7 +132,7 @@ const CreateContainer = () => {
   const clearData = () => {
     setTitle("");
     setImageAsset(null);
-    setCalories("");
+    setAuthor("");
     setPrice("");
     setCategory("Select Category");
   };
@@ -248,8 +248,8 @@ const CreateContainer = () => {
             <input
               type="text"
               required
-              value={calories}
-              onChange={(e) => setCalories(e.target.value)}
+              value={author}
+              onChange={(e) => setAuthor(e.target.value)}
               placeholder="Author"
               className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
             />

@@ -43,7 +43,12 @@ const MainContainer = () => {
         <RowContainer
           scrollValue={scrollValue}
           flag={true}
-          data={newArrivals?.filter((n) => n.category === "scifi")}
+          data={newArrivals?.filter(
+            (n) =>
+              n.category === "fantasy" ||
+              n.category === "scifi" ||
+              n.category === "mystery"
+          )}
         />
       </section>
 
