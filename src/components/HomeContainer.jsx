@@ -38,7 +38,7 @@ const HomeContainer = () => {
             className="md:-mt-20"
           >
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-librbarytext">
+              <div className="before:absolute before:-top-20 before:left-[34rem] before:z-[-1] md:before:content-brbtext">
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             </div>

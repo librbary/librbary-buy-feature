@@ -66,6 +66,9 @@ module.exports = {
         "secondary-500": "#FFC132",
         "color-dark": "#515151",
       },
+      content: {
+        brbtext: "url('./assets/img/brbText.png')",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],
