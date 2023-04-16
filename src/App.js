@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Header } from "./components";
+import { Header, Footer } from "./components";
 import MainContainer from "./components/MainContainer";
 import CreateContainer from "./components/CreateContainer";
 import { AnimatePresence } from "framer-motion";
@@ -37,6 +37,8 @@ function App() {
               <Route path="/createItem" element={<CreateContainer />} />
             </Routes>
           </main>
+
+          <Footer />
         </div>
       </AnimatePresence>
     </>
