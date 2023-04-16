@@ -10,3 +10,4 @@ export { default as CartItem } from "./CartItem";
 export { default as RequestBook } from "./RequestBook";
 export { default as Footer } from "./Footer";
 export { default as Features } from "./Features";
+export { default as Figures } from "./Figures";

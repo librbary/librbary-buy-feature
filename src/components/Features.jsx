@@ -55,7 +55,7 @@ const Features = () => {
             >
               <p className="my-5">
                 Looking for new books to Read?? Welcome to liBRBary's{" "}
-                <b className="text-primary-300">BUY</b> feature. Here you can
+                <b className="text-primary-500">BUY</b> feature. Here you can
                 check out new arrivals of each genres.
               </p>
               <p className="mb-5">
@@ -121,7 +121,7 @@ const Features = () => {
                 fingertips... <br />
                 You can now borrow or rent any books to read from your nearby
                 public libraries or you can read it here at your online desk for{" "}
-                <b className="text-primary-300">FREE</b>.
+                <b className="text-primary-500">FREE</b>.
               </p>
               <p className="mb-5">
                 You are just one membership card away to read your favourite
@@ -196,7 +196,7 @@ const Features = () => {
             >
               <p className="my-5">
                 Reading same book over and over and over again!! Click on{" "}
-                <b className="text-primary-300">BARTER NOW!</b> <br />
+                <b className="text-primary-500">BARTER NOW!</b> <br />
                 You can now exchange your old books with your friends here in
                 liBRBary. And plus point is, you'll get some reward points for
                 that.
@@ -206,8 +206,8 @@ const Features = () => {
                 your books on the communities and that's it! Wait for other user
                 to show interest in your books and there you go!! <br /> <br />
                 Thinking about frauds?! liBRBary is the{" "}
-                <b className="text-primary-300">SAFEST</b> and{" "}
-                <b className="text-primary-300">SECURE</b> place to reconciliate
+                <b className="text-primary-500">SAFEST</b> and{" "}
+                <b className="text-primary-500">SECURE</b> place to reconciliate
                 your identities, so no worries! and enjoy READING...
               </p>
             </motion.div>
