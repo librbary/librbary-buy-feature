@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/librbary-buy-feature/static/css/main.65273b6c.css",
-    "main.js": "/librbary-buy-feature/static/js/main.0a296fe8.js",
+    "main.css": "/librbary-buy-feature/static/css/main.befcd6ea.css",
+    "main.js": "/librbary-buy-feature/static/js/main.2ab1fa24.js",
     "static/media/book4.png": "/librbary-buy-feature/static/media/book4.59267ca4642f3d341fc4.png",
     "static/media/book5.png": "/librbary-buy-feature/static/media/book5.498c563c84d4e74fb591.png",
     "static/media/book3.png": "/librbary-buy-feature/static/media/book3.d25a8761bf8bf41cee9b.png",
     "static/media/book2.png": "/librbary-buy-feature/static/media/book2.a719a2cc78e3a279f098.png",
+    "static/media/emptyShelf.png": "/librbary-buy-feature/static/media/emptyShelf.551b3b39648b10ae66ed.png",
     "static/media/book1.png": "/librbary-buy-feature/static/media/book1.cd3365b617f4a5e032dc.png",
     "static/media/heroBg.png": "/librbary-buy-feature/static/media/heroBg.c43c4862422e70d88698.png",
     "static/media/delivery.png": "/librbary-buy-feature/static/media/delivery.bf9130a0962fbe091abc.png",
@@ -16,11 +17,11 @@
     "static/media/emptyCart.svg": "/librbary-buy-feature/static/media/emptyCart.71ad17e692d71caa77c6c9351f84756b.svg",
     "static/media/NotFound.svg": "/librbary-buy-feature/static/media/NotFound.4e90bb93460bfd8d9e2c86b42ef91a4a.svg",
     "index.html": "/librbary-buy-feature/index.html",
-    "main.65273b6c.css.map": "/librbary-buy-feature/static/css/main.65273b6c.css.map",
-    "main.0a296fe8.js.map": "/librbary-buy-feature/static/js/main.0a296fe8.js.map"
+    "main.befcd6ea.css.map": "/librbary-buy-feature/static/css/main.befcd6ea.css.map",
+    "main.2ab1fa24.js.map": "/librbary-buy-feature/static/js/main.2ab1fa24.js.map"
   },
   "entrypoints": [
-    "static/css/main.65273b6c.css",
-    "static/js/main.0a296fe8.js"
+    "static/css/main.befcd6ea.css",
+    "static/js/main.2ab1fa24.js"
   ]
 }
