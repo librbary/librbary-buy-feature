@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { IoFastFood } from "react-icons/io5";
+import React, { useState } from "react";
+import { GiBookshelf } from "react-icons/gi";
 import { categories } from "../utils/data";
 import { motion } from "framer-motion";
 import RowContainer from "./RowContainer";
@@ -35,7 +35,7 @@ const MenuContainer = () => {
                       : "bg-cartNumBg"
                   } group-hover:bg-white flex items-center justify-center`}
                 >
-                  <IoFastFood
+                  <GiBookshelf
                     className={`${
                       filter === category.urlParamName
                         ? "text-textColor"
