@@ -19,12 +19,13 @@ import { storage } from "../firebase.config";
 import { getAllNewArrivals, saveItem } from "../utils/firebaseFunctions";
 import { actionType } from "../context/reducer";
 import { useStateValue } from "../context/StateProvider";
+import { Autocomplete, TextField } from "@mui/material";
 
 const CreateContainer = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [price, setPrice] = useState("");
-  const [category, setCategory] = useState(null);
+  const [category, setCategory] = useState([]);
   const [imageAsset, setImageAsset] = useState(null);
   const [fields, setFields] = useState(false);
   const [alertStatus, setAlertStatus] = useState("danger");
@@ -91,10 +92,6 @@ const CreateContainer = () => {
         setFields(true);
         setMsg("Required fields can't be empty");
         setAlertStatus("danger");
-        // setTimeout(() => {
-        //   setFields(false);
-        //   setIsLoading(false);
-        // }, 4000);
       } else {
         const data = {
           id: `${Date.now()}`,
@@ -134,7 +131,7 @@ const CreateContainer = () => {
     setImageAsset(null);
     setAuthor("");
     setPrice("");
-    setCategory("Select Category");
+    setCategory([]);
   };
 
   const fetchData = async () => {
@@ -144,6 +141,10 @@ const CreateContainer = () => {
         newArrivals: data,
       });
     });
+  };
+
+  const handleChange = (event, value) => {
+    setCategory(value);
   };
 
   return (
@@ -177,24 +178,22 @@ const CreateContainer = () => {
         </div>
 
         <div className="w-full">
-          <select
-            onChange={(e) => setCategory(e.target.value)}
-            className="outline-none w-full text-base border-b-2 border-gray-200 p-2 rounded-md cursor-pointer"
-          >
-            <option value="other" className="bg-white">
-              Select Category
-            </option>
-            {categories &&
-              categories.map((item) => (
-                <option
-                  key={item.id}
-                  className="text-base border-0 outline-none capitalize bg-white text-headingColor"
-                  value={item.urlParamName}
-                >
-                  {item.name}
-                </option>
-              ))}
-          </select>
+          <Autocomplete
+            multiple
+            id="multiple-limit-tags"
+            options={categories}
+            getOptionLabel={(option) => option.name}
+            value={category}
+            renderInput={(params) => (
+              <TextField
+                {...params}
+                label="Category"
+                placeholder="Select categories"
+              />
+            )}
+            sx={{ width: "100%" }}
+            onChange={handleChange}
+          />
         </div>
 
         <div className="group flex justify-center items-center flex-col border-2 border-dotted border-gray-300 w-full h-225 md:h-340 cursor-pointer rounded-lg">
