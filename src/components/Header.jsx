@@ -11,6 +11,7 @@ import Avatar from "../assets/img/avatar.png";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
+import Login from "./Login";
 
 const Header = () => {
   const firebaseAuth = getAuth(app);
@@ -65,7 +66,7 @@ const Header = () => {
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 200 }}
-            className="flex items-center gap-24 "
+            className="flex items-center gap-10 "
           >
             <Link to={"/"}>
               <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
@@ -104,13 +105,21 @@ const Header = () => {
           </div>
 
           <div className="relative">
-            <motion.img
-              whileTap={{ scale: 0.6 }}
-              src={user ? user.photoURL : Avatar}
-              className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
-              alt="userprofile"
+            {/* <motion.button
+              className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white"
               onClick={login}
-            />
+            >
+              Sign In
+            </motion.button> */}
+
+            <Link to={"/login"}>
+              <motion.img
+                whileTap={{ scale: 0.6 }}
+                src={user ? user.photoURL : Avatar}
+                className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
+                alt="userprofile"
+              />
+            </Link>
             {isMenu && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.6 }}
@@ -162,13 +171,14 @@ const Header = () => {
         </Link>
 
         <div className="relative">
-          <motion.img
-            whileTap={{ scale: 0.6 }}
-            src={user ? user.photoURL : Avatar}
-            className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
-            alt="userprofile"
-            onClick={login}
-          />
+          <Link to={"/login"}>
+            <motion.img
+              whileTap={{ scale: 0.6 }}
+              src={user ? user.photoURL : Avatar}
+              className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
+              alt="userprofile"
+            />
+          </Link>
           {isMenu && (
             <motion.div
               initial={{ opacity: 0, scale: 0.6 }}

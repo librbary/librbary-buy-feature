@@ -11,3 +11,5 @@ export { default as RequestBook } from "./RequestBook";
 export { default as Footer } from "./Footer";
 export { default as Features } from "./Features";
 export { default as Figures } from "./Figures";
+export { default as Login } from "./Login";
+export { default as Register } from "./Register";
