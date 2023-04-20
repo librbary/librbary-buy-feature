@@ -11,6 +11,7 @@ import Avatar from "../assets/img/avatar.png";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
+import Login from "./Login";
 
 const Header = () => {
   const firebaseAuth = getAuth(app);
@@ -104,7 +105,14 @@ const Header = () => {
           </div>
 
           <div className="relative">
-            <motion.img
+            <motion.button
+              className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white"
+              onClick={Login}
+            >
+              Sign In
+            </motion.button>
+
+            {/* <motion.img
               whileTap={{ scale: 0.6 }}
               src={user ? user.photoURL : Avatar}
               className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
@@ -136,7 +144,7 @@ const Header = () => {
                   Logout <MdLogout />
                 </p>
               </motion.div>
-            )}
+            )} */}
           </div>
         </div>
       </div>

@@ -3,6 +3,8 @@ import "./App.css";
 import { Header, Footer } from "./components";
 import MainContainer from "./components/MainContainer";
 import CreateContainer from "./components/CreateContainer";
+import UserCredentials from "./components/Login";
+import Register from "./components/Register";
 import { AnimatePresence } from "framer-motion";
 import { useStateValue } from "./context/StateProvider";
 import { getAllNewArrivals } from "./utils/firebaseFunctions";
@@ -35,6 +37,8 @@ function App() {
             <Routes>
               <Route path="/*" element={<MainContainer />} />
               <Route path="/createItem" element={<CreateContainer />} />
+              <Route path="/login" element={<UserCredentials />} />
+              <Route path="/register" element={<Register />} />
             </Routes>
           </main>
 
