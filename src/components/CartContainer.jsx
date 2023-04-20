@@ -9,6 +9,7 @@ import EmptyCart from "../assets/img/emptyCart.svg";
 import CartItem from "./CartItem";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import { app } from "../firebase.config";
+import { Link } from "react-router-dom";
 
 const CartContainer = () => {
   const [{ cartShow, cartItems, user }, dispatch] = useStateValue();
@@ -131,14 +132,15 @@ const CartContainer = () => {
                 Check Out
               </motion.button>
             ) : (
-              <motion.button
-                whileTap={{ scale: 0.8 }}
-                type="button"
-                className="w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-600 text-gray-50 text-lg my-2 hover:shadow-lg"
-                onClick={login}
-              >
-                Login to check out
-              </motion.button>
+              <Link to={"/login"} className="w-full">
+                <motion.button
+                  whileTap={{ scale: 0.8 }}
+                  type="button"
+                  className="w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-600 text-gray-50 text-lg my-2 hover:shadow-lg"
+                >
+                  Login to check out
+                </motion.button>
+              </Link>
             )}
           </div>
         </div>
