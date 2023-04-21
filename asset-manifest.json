@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/librbary-buy-feature/static/css/main.3d9db5d0.css",
-    "main.js": "/librbary-buy-feature/static/js/main.e3061865.js",
+    "main.css": "/librbary-buy-feature/static/css/main.d7938b35.css",
+    "main.js": "/librbary-buy-feature/static/js/main.89fe96f4.js",
     "static/media/book4.png": "/librbary-buy-feature/static/media/book4.59267ca4642f3d341fc4.png",
     "static/media/img2.png": "/librbary-buy-feature/static/media/img2.7e10b0d8a2fab964610f.png",
     "static/media/book5.png": "/librbary-buy-feature/static/media/book5.498c563c84d4e74fb591.png",
@@ -11,6 +11,7 @@
     "static/media/emptyShelf.png": "/librbary-buy-feature/static/media/emptyShelf.551b3b39648b10ae66ed.png",
     "static/media/book1.png": "/librbary-buy-feature/static/media/book1.cd3365b617f4a5e032dc.png",
     "static/media/cloud_2.png": "/librbary-buy-feature/static/media/cloud_2.6a58444cfa692a8950e2.png",
+    "static/media/HomePageGraphic.png": "/librbary-buy-feature/static/media/HomePageGraphic.8ce5179f2c4d88949e5f.png",
     "static/media/openLibrary.png": "/librbary-buy-feature/static/media/openLibrary.bb3d059973f7c863271c.png",
     "static/media/bookShop.jpeg": "/librbary-buy-feature/static/media/bookShop.6a03e5da93eb029951f1.jpeg",
     "static/media/barter.png": "/librbary-buy-feature/static/media/barter.af6456f2632ecad9a831.png",
@@ -25,11 +26,11 @@
     "static/media/github.svg": "/librbary-buy-feature/static/media/github.8d6ed8b8b02e37a855b953f52a4a5c00.svg",
     "static/media/google.svg": "/librbary-buy-feature/static/media/google.a5b48a51973c6dd2b3114b9d7d94fc36.svg",
     "index.html": "/librbary-buy-feature/index.html",
-    "main.3d9db5d0.css.map": "/librbary-buy-feature/static/css/main.3d9db5d0.css.map",
-    "main.e3061865.js.map": "/librbary-buy-feature/static/js/main.e3061865.js.map"
+    "main.d7938b35.css.map": "/librbary-buy-feature/static/css/main.d7938b35.css.map",
+    "main.89fe96f4.js.map": "/librbary-buy-feature/static/js/main.89fe96f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d9db5d0.css",
-    "static/js/main.e3061865.js"
+    "static/css/main.d7938b35.css",
+    "static/js/main.89fe96f4.js"
   ]
 }
