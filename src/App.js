@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Header, Footer, Login } from "./components";
+import { Header, Footer, Login, Features, RequestBook } from "./components";
 import MainContainer from "./components/MainContainer";
 import CreateContainer from "./components/CreateContainer";
 import Register from "./components/Register";
@@ -38,6 +38,8 @@ function App() {
               <Route path="/createItem" element={<CreateContainer />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/features" element={<Features />} />
+              <Route path="/requestBook" element={<RequestBook />} />
             </Routes>
           </main>
 

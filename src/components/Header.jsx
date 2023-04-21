@@ -11,7 +11,6 @@ import Avatar from "../assets/img/avatar.png";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
-import Login from "./Login";
 
 const Header = () => {
   const firebaseAuth = getAuth(app);
@@ -73,7 +72,7 @@ const Header = () => {
                 Home
               </li>
             </Link>
-            <Link to={"/"}>
+            <Link to={"/features"}>
               <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
                 Features
               </li>
@@ -83,7 +82,7 @@ const Header = () => {
                 New Arrivals
               </li>
             </Link>
-            <Link to={"/"}>
+            <Link to={"/requestBook"}>
               <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
                 Request for a Book
               </li>
