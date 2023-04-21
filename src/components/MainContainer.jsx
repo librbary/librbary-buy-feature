@@ -6,9 +6,6 @@ import RowContainer from "./RowContainer";
 import { useStateValue } from "../context/StateProvider";
 import MenuContainer from "./MenuContainer";
 import CartContainer from "./CartContainer";
-import RequestBook from "./RequestBook";
-import Features from "./Features";
-import Figures from "./Figures";
 
 const MainContainer = () => {
   const [{ newArrivals, cartShow }, dispatch] = useStateValue();
@@ -20,9 +17,9 @@ const MainContainer = () => {
     <div className="w-full h-auto flex flex-col items-center justify-center ">
       <HomeContainer />
 
-      <Figures />
+      {/* <Figures /> */}
 
-      <Features />
+      {/* <Features /> */}
 
       <section className="w-full my-6">
         <div className="w-full flex items-center justify-between">
@@ -61,7 +58,7 @@ const MainContainer = () => {
 
       <MenuContainer />
 
-      <RequestBook />
+      {/* <RequestBook /> */}
 
       {cartShow && <CartContainer />}
     </div>
