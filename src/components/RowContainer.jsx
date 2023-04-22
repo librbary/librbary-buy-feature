@@ -6,6 +6,7 @@ import NotFound from "../assets/img/NotFound.svg";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
 import Stars from "./Stars";
+import { Link } from "react-router-dom";
 
 const RowContainer = ({ flag, data, scrollValue }) => {
   const rowContainer = useRef();
@@ -51,11 +52,13 @@ const RowContainer = ({ flag, data, scrollValue }) => {
                 className="w-40 h-40 mt-[1rem] drop-shadow-2xl"
                 whileHover={{ scale: 1.2 }}
               >
-                <img
-                  src={item?.imageURL}
-                  alt="new_books"
-                  className="w-full h-full object-contain"
-                />
+                <Link to={"/product"}>
+                  <img
+                    src={item?.imageURL}
+                    alt="new_books"
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
               </motion.div>
               <motion.div
                 whileTap={{ scale: 0.75 }}
@@ -67,7 +70,9 @@ const RowContainer = ({ flag, data, scrollValue }) => {
             </div>
 
             <div className="w-full flex items-start justify-start">
-              <div className="mt-5"><Stars stars={3} /></div>
+              <div className="mt-5">
+                <Stars stars={3} />
+              </div>
             </div>
 
             <div className="w-full flex flex-col items-end justify-end -mt-20">
