@@ -8,10 +8,13 @@ import {
   FaCartPlus,
   FaShareAlt,
   FaWhatsapp,
+  FaExchangeAlt,
 } from "react-icons/fa";
-import { BsTagsFill } from "react-icons/bs";
+import { BsTagsFill, BsStarFill } from "react-icons/bs";
+import { HiBuildingLibrary } from "react-icons/hi2";
 import Img from "../assets/img/book11.jpeg";
 import Reviews from "./Reviews";
+import Stars from "./Stars";
 
 const ProductDetail = () => {
   return (
@@ -25,6 +28,9 @@ const ProductDetail = () => {
             <div className="w-full flex flex-col pt-5 md:p-9">
               <span className="text-xl mb-5 md:text-3xl text-orange-500 font-bold">
                 The Windup Girl
+              </span>
+              <span>
+                <Stars stars={4.5} reviews={34} />
               </span>
               <span className="text-xl mb-5 text-primary-500">&#8377;234</span>
               <span className="text-sm mb-5 text-gray-600 md:text-base">
@@ -42,11 +48,7 @@ const ProductDetail = () => {
                 was his debut novel and was published by Night Shade Books on
                 September 1, 2009. The novel is set in a future Thailand and
                 covers a number of contemporary issues such as global warming
-                and biotechnology. The Windup Girl is a biopunk science fiction
-                novel by American writer Paolo Bacigalupi. It was his debut
-                novel and was published by Night Shade Books on September 1,
-                2009. The novel is set in a future Thailand and covers a number
-                of contemporary issues such as global warming and biotechnology.
+                and biotechnology. 
               </span>
 
               <div className="flex flex-col mt-8 md:flex-row gap-5">
@@ -67,11 +69,11 @@ const ProductDetail = () => {
                     BUY
                   </button>
                   <button className="border-0 h-[50px] w-[180px] flex items-center justify-center cursor-pointer text-base text-white bg-secondary-400 hover:bg-secondary-500 border-b-4 border-b-secondary-500 flex-grow md:flex-grow-[unset]">
-                    <FaCartPlus size={20} className="mr-3" />
+                    <HiBuildingLibrary size={20} className="mr-3" />
                     RENT
                   </button>
                   <button className="border-0 h-[50px] w-[180px] flex items-center justify-center cursor-pointer text-base text-white bg-secondary-400 hover:bg-secondary-500 border-b-4 border-b-secondary-500 flex-grow md:flex-grow-[unset]">
-                    <FaCartPlus size={20} className="mr-3" />
+                    <FaExchangeAlt size={20} className="mr-3" />
                     BARTER
                   </button>
                 </div>
@@ -121,7 +123,6 @@ const ProductDetail = () => {
           <RelatedProducts />
 
           <Reviews />
-          
         </div>
       </div>
     </>

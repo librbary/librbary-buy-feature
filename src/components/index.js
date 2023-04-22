@@ -17,3 +17,4 @@ export { default as ProductDetail } from "./ProductDetail";
 export { default as RelatedProduct } from "./RelatedProduct";
 export { default as NewArrivals } from "./NewArrivals";
 export { default as Reviews } from "./Reviews";
+export { default as Stars } from "./Stars";

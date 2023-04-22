@@ -5,6 +5,7 @@ import { heroData } from "../utils/data";
 import { motion } from "framer-motion";
 import HomePageText from "../assets/img/HomePageText.png";
 import { BsCurrencyRupee } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const HomeContainer = () => {
   return (
@@ -66,9 +67,11 @@ const HomeContainer = () => {
             }}
             className="mt-8 flex items-center gap-8"
           >
-            <button className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white">
-              Register
-            </button>
+            <Link to="/features">
+              <button className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white">
+                About Us
+              </button>
+            </Link>
           </motion.div>
         </div>
       </div>
