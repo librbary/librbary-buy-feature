@@ -9,9 +9,10 @@ import {
   FaShareAlt,
   FaWhatsapp,
 } from "react-icons/fa";
-import { BsTagsFill } from "react-icons/bs";
+import { BsTagsFill, BsStarFill } from "react-icons/bs";
 import Img from "../assets/img/book11.jpeg";
 import Reviews from "./Reviews";
+import Stars from "./Stars";
 
 const ProductDetail = () => {
   return (
@@ -26,6 +27,7 @@ const ProductDetail = () => {
               <span className="text-xl mb-5 md:text-3xl text-orange-500 font-bold">
                 The Windup Girl
               </span>
+              <span><Stars stars={4.5} reviews={34} /></span>
               <span className="text-xl mb-5 text-primary-500">&#8377;234</span>
               <span className="text-sm mb-5 text-gray-600 md:text-base">
                 The Windup Girl is a biopunk science fiction novel by American
