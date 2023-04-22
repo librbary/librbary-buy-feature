@@ -21,7 +21,7 @@ const Stars = ({ stars, reviews }) => {
     <>
       <div className="flex gap-1 items-center justify-start mb-4">
         {ratingStar}
-        <p className="m-1 pl-2 text-slate-700">({reviews} Reviews)</p>
+        <p className="m-1 pl-2 text-slate-700">{reviews}</p>
       </div>
     </>
   );

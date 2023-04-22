@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import NotFound from "../assets/img/NotFound.svg";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
+import Stars from "./Stars";
 
 const RowContainer = ({ flag, data, scrollValue }) => {
   const rowContainer = useRef();
@@ -65,12 +66,17 @@ const RowContainer = ({ flag, data, scrollValue }) => {
               </motion.div>
             </div>
 
-            <div className="w-full flex flex-col items-end justify-end -mt-10">
+            <div className="w-full flex items-start justify-start">
+              <div className="mt-5"><Stars stars={3} /></div>
+            </div>
+
+            <div className="w-full flex flex-col items-end justify-end -mt-20">
               <div className="w-[8rem] h-[4rem] text-end">
                 <p className="text-textColor font-semibold text-sm md:text-sm break-words">
                   {item?.title}
                 </p>
               </div>
+
               <p className="-mt-5 text-sm text-gray-500">by {item?.author}</p>
               <div className="flex items-center gap-8 mb-20">
                 <p className="text-lg text-headingColor font-semibold">
