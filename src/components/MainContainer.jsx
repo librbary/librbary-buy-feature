@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HomeContainer from "./HomeContainer";
 import { useStateValue } from "../context/StateProvider";
-import MenuContainer from "./MenuContainer";
+import GenreConainer from "./GenreContainer";
 import CartContainer from "./CartContainer";
 import NewArrivals from "./NewArrivals";
 
@@ -16,7 +16,7 @@ const MainContainer = () => {
 
       <NewArrivals />
 
-      <MenuContainer />
+      <GenreConainer />
 
       {cartShow && <CartContainer />}
     </div>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import RowContainer from "./RowContainer";
 import { useStateValue } from "../context/StateProvider";
 
-const MenuContainer = () => {
+const GenreContainer = () => {
   const [filter, setFilter] = useState("mystery");
 
   const [{ newArrivals }, dispatch] = useStateValue();
@@ -67,4 +67,4 @@ const MenuContainer = () => {
   );
 };
 
-export default MenuContainer;
+export default GenreContainer;
