@@ -54,6 +54,12 @@ module.exports = {
         cartBg: "#282a2c",
         cartItem: "#2e3033",
         cartTotal: "#343739",
+        facebook: "#1877F2",
+        twitter: "#1DA1F2",
+        whatsapp: "#25D366",
+        instagram: "#E4405F",
+        linkedIn: "#0A66C2",
+        pintrest: "#BD081C",
 
         "gray-20": "#F8F4EB",
         "gray-50": "#EFE6E6",
