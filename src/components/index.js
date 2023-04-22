@@ -16,3 +16,4 @@ export { default as Register } from "./Register";
 export { default as ProductDetail } from "./ProductDetail";
 export { default as RelatedProduct } from "./RelatedProduct";
 export { default as NewArrivals } from "./NewArrivals";
+export { default as Reviews } from "./Reviews";

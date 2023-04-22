@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { BsTagsFill } from "react-icons/bs";
 import Img from "../assets/img/book11.jpeg";
+import Reviews from "./Reviews";
 
 const ProductDetail = () => {
   return (
@@ -116,7 +117,11 @@ const ProductDetail = () => {
               </div>
             </div>
           </div>
+
           <RelatedProducts />
+
+          <Reviews />
+          
         </div>
       </div>
     </>
