@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Header, Footer, Login, Features, RequestBook } from "./components";
+import { Header, Footer, Login, Features, RequestBook, ProductDetail } from "./components";
 import MainContainer from "./components/MainContainer";
 import CreateContainer from "./components/CreateContainer";
 import Register from "./components/Register";
@@ -40,6 +40,7 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/features" element={<Features />} />
               <Route path="/requestBook" element={<RequestBook />} />
+              <Route path="/product" element={<ProductDetail />} />
             </Routes>
           </main>
 

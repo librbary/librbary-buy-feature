@@ -13,3 +13,5 @@ export { default as Features } from "./Features";
 export { default as Figures } from "./Figures";
 export { default as Login } from "./Login";
 export { default as Register } from "./Register";
+export { default as ProductDetail } from "./ProductDetail";
+export { default as RelatedProduct } from "./RelatedProduct";
